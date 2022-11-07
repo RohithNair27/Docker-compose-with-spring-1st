@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  dockermsg:
+    build: ./spring-docker
+    ports:
+      - 8080:8080
+
+  dockerpro:
+    build: ./docker2
+    ports:
+      - 8081:8080

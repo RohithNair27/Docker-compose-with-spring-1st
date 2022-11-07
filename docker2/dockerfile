@@ -1,0 +1,6 @@
+FROM openjdk:17-jdk-slim-buster
+LABEL name="rohith_k"
+
+COPY target/docker2-0.0.1-SNAPSHOT.jar docker2-0.0.1-SNAPSHOT.jar 
+
+CMD ["java","-jar","docker2-0.0.1-SNAPSHOT.jar"]
